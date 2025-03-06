@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageVerse LOGIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="login.css">
+    <script type="module" src="bundle.js"></script>
+</head>
+<body>
+    <div class="container" id="signup" style="display: none;">
+        <h1 class="form-title"><img src="images/voyageverse logo.png" alt="logo">SIGN UP</h1>
+        
+        <form method="post" action>
+            <div id="signupmsg" class="msgdiv" style="display: none;"></div>
+            <div class="inputparameters">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <label for="name">User Name</label>
+            </div>
+            <div class="inputparameters">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="Useremail" placeholder="Email" required>
+                <label for="Useremail">Email</label>
+            </div>
+            <div class="inputparameters">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="Userpass" placeholder="Password" required>
+                <label for="Userpass">Password</label>
+            </div>
+            <button id="submitsignup" class="btn">Sign Up</button>
+        </form>
+        <p class="or">------------OR-----------</p>
+        <div class="icons">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="link">
+            <p>Already have an account?</p>
+            <button id="loginbutton">Log In</button>
+        </div>
+    </div>
+    <div class="container" id="login">
+        <h1 class="form-title"><img src="images/voyageverse logo.png" alt="logo">LOG IN</h1>
+        
+        <form method="post" action>
+            <div id="loginmsg" class="msgdiv" style="display: none;"></div>
+            <div class="inputparameters">
+                <i class="fa-solid fa-envelope">
+                    
+                </i>
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="Useremail">Email</label>
+            </div>
+            <div class="inputparameters">
+                <i class="fa-solid fa-lock">
+                    
+                </i>
+                <input type="password" id="pass" placeholder="Password" required>
+                <label for="Userpass">Password</label>
+            </div>
+            <p class="forgot"><a href="#">Forgot password</a></p>
+            <button class="btn" id="submitlogin">Log In</button>
+        </form>
+        <div class="link">
+
+           <p>Don't have an account yet?</p>
+           <button class="btn" id="signupbutton">Sign Up</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

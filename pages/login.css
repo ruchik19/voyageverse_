@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("images/bglogin2.webp");
+    background-size: cover;
+}
+
+.container{
+    
+    background-color: rgb(246, 223, 196);
+    width: 500px;
+    padding: 2rem;
+    margin:70px auto;
+    border-radius:10px;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+}
+img{
+    height: 70px;
+    width: 150px;
+    margin-right: 2rem;
+    
+}
+form{
+    margin: 0 2.5rem;
+}
+.form-title{
+    font-size:2.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1rem;
+    margin-bottom:0.6rem;
+}
+input{
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #2e2b2b;
+    padding-left:1.5rem;
+    font-size:20px;
+}
+.inputparameters{
+    padding:1% 0;
+    position:relative;
+
+}
+.inputparameters i{
+    position:absolute;
+    color:black;
+}
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid hsl(327,90%,28%);
+}
+input::placeholder{
+    color:transparent;
+}
+label{
+    color:#757575;
+    position:relative;
+    left:1.5em;
+    top:-1.3em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-3em;
+    color:hsl(327,90%,28%);
+    font-size:15px;
+}
+.forgot{
+    text-align:right;
+    font-size:1.2rem;
+    margin-bottom:1rem;
+
+}
+.forgot a{
+    text-decoration:none;
+    color:rgb(125,125,235);
+}
+.forgot a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+button{
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    background:rgb(71, 71, 141);
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+}
+button:hover{
+    background:#07001f;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.icons{
+    margin-top: 4px;
+    text-align:center;
+}
+.icons i{
+    color:rgb(71, 71, 141);
+    padding:0.8rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    margin:0 15px;
+    
+}
+.icons i:hover{
+    background:#07001f;
+    font-size:1.6rem;
+    border:2px solid rgb(125,125,235);
+}
+.link{
+    display:flex;
+    justify-content:space-around;
+    padding:0 4rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+}
+ #signupbutton, #loginbutton{
+    color:rgb(71, 71, 141);
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+#signupbutton:hover, #loginbutton:hover {
+    text-decoration:underline;
+    color:rgb(82, 82, 253);
+} 
+.msgdiv{
+    background-color:hsl(327,90%,28%);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius: 5px;
+    font-size:1rem;
+    opacity:0;
+    animation:fadeOut 7s forwards;
+
+}
+

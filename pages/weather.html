@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="input-container">
+            <input class="city-input" type="text" placeholder="Search city">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </header>
+        <div class="weather-container" style="display: none;">
+            <div class="weather-info">
+                <div class="location-date-container">
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4 class="country-text">Jakarta</h4>
+                        <h5 class="current-date-txt regular-txt">Wed, 01 Jan</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-summary">
+                <img src="images/clouds.svg" alt="" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29 °C </h1>
+                    <h3 class="condition-txt regular-txt ">Clouds</h3>
+    
+                </div>
+            </div>
+            <div class="weather-conditions-container">
+                <div class="conditions-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt">55%</h5>
+                    </div>
+                </div>
+                <div class="conditions-item">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind Speed</h5>
+                        <h5 class="wind-value-txt"> 2 m/s</h5>  
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">31 Dec 2024</h5>
+                    <img src="images/thunderstorm.svg"  class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">31 Dec 2024</h5>
+                    <img src="images/thunderstorm.svg"  class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">31 Dec 2024</h5>
+                    <img src="images/thunderstorm.svg"  class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C </h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">31 Dec 2024</h5>
+                    <img src="images/thunderstorm.svg"  class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C </h5>
+                </div> 
+    
+            </div>
+    
+        </div>
+        <div class="search-city section-msg">
+             <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt" style="font-size: 20px;">
+                    Find out the weather conditions of the destination
+                </h4>
+             </div>
+            <img src="images/search-city.png" class="search-city-img">
+
+
+        </div>
+    </div>
+    <script src="weather.js"></script>
+
+    
+</body>
+</html>

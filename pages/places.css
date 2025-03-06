@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+
+    
+    
+}
+h1{
+    color: rgb(252, 248, 248);
+    text-align: center;
+    background-color: #62929E;
+    margin-top: 5px;
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    
+    font-size: 30px;
+    margin-top: 10px;
+}
+.to-do{
+    margin-top: 40px;
+    
+}
+.to-do .to-do-things{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.hotel-info{
+    padding-top: 40px ;
+    padding-bottom: 60px;
+}
+.hotel-info ul li {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.to-do ul li {
+    font-size: 20px;
+    list-style: none;
+}
+.your-review{
+    
+    padding: 15px;
+
+}
+.your-review label{
+    font-size: 25px;
+    
+}
+.your-review #user-name{
+    width: 400px;
+    height: 35px;
+    border-radius: 1rem;
+    padding-left: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+
+
+}
+.your-review #user-destination{
+    width: 400px;
+    height: 35px;
+    border-radius: 1rem;
+    padding-left: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+
+}
+.your-review #review-text{
+    width: 400px;
+    height: 150px;
+    padding-left: 10px;
+    border-radius: 1rem;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding-top: 10px;
+
+
+}
+.your-review #image-upload{
+    margin-top: 10px;
+    height: 40px;
+    width: auto;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: lavenderblush;
+    border-radius: 1rem;
+    border: none;
+
+    
+
+}
+.your-review button{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+    
+    background-color: rgb(251, 195, 212);
+    margin-top: 15px;
+    border-radius: 1rem;
+    border: none;
+
+}
+.your-review button:hover{
+    border: 1px solid black;
+    transform: scale(1.02);
+}
+
+.heading{
+    color: rgb(252, 248, 248);
+    text-align: center;
+    background-color: #325d68;
+    margin-top: 5px;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.image-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 40px;
+}
+.image-info .dest-image img{
+    margin-left: 70px;
+    box-shadow: 20px 20px 0px rgba(154, 154, 248, 0.9);
+}
+.image-info .info{
+    padding-right: 3rem;
+}
+#reviews-container {
+    
+    margin-top: 10px;
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 470px 470px 470px  ; /* Responsive grid */
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.review {
+    border-radius: 2rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    
+}
+.rating{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: .5rem;
+    font-size: 3rem;
+    color: rgb(211, 211, 46);
+}
+.rating .star{
+    cursor: pointer;
+}
+.rating .star:hover{
+    transform: scale(1.1);
+
+}
+.review .images{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,200px)) ;
+    gap: 10px;
+}
+.review i {
+    color: rgb(211, 211, 46);
+}
+
+.review img {
+    width: 200px;
+    height: 200px;
+}
+.review h3{
+    font-size: 30px;
+}
+.review p{
+    font-size: 25px;
+}
+.gallery-container{
+    
+    width: 80%;
+    
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.gallery-container img{
+    height: 300px;
+    width: 300px;
+}
+.show-btn{
+    background-color: #325d68;
+    color: aliceblue;
+    height: 40px;
+    width: 100px;
+    border-radius: 1rem;
+}
+.features{
+    
+    margin-top: 10vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    gap: 10px;
+}
+.box1{
+    height: 300px;
+    width: 300px;
+    color: white;
+    background-color:  rgb(245, 230, 211);
+    border-radius: 4rem;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 8px;
+    background-image: url("images/weather.jpg");
+    background-size: cover;
+}
+.box1:hover{
+    transform: scale(1.2);
+}
+.box2{
+    height: 300px;
+    width: 300px;
+    background-color:   rgb(245, 230, 211);
+    border-radius: 4rem;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    background-image: url("images/currency.jpg");
+    background-size: cover;
+    color: white;
+}
+.box2:hover{
+    transform: scale(1.2);
+
+}
+.box3{
+    height: 300px;
+    width:300px;
+    background-color:  rgb(245, 230, 211);
+    border-radius: 4rem;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 4px;
+    background-image: url("images/wishlist.jpg");
+    background-size: cover;
+    color: rgb(7, 6, 6);
+}
+.box3:hover{
+    transform: scale(1.2);
+}

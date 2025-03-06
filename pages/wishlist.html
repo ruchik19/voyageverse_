@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wishlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="wishlist.js"></script>
+    <link rel="stylesheet" href="wishlist.css">
+
+</head>
+<body>
+    <h1>Welcome to VoyageVerse </h1>
+    <h1>YOUR WISHLIST</h1>
+    <div class="if-empty" style="display: none;">
+        NOTHING IN HERE.
+        <br>
+        PLEASE SAVE DESTINATIONS TO YOUR WISHLIST
+        <br>
+        <i class="fa-duotone fa-solid fa-clipboard-list"></i>
+        <br>
+        <button class="home">Go to Homepage</button>
+
+    </div>
+    <div id="_tokyo"class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180); display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/tokyo.avif" alt="tokyo" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">1. TOKYO, JAPAN</span></h2>
+            <p style="font-size: 20px;">With its futuristic skyscrapers, unrivalled food scene, and wild nightlife, Tokyo is a rush of pure adrenaline. 
+                The city is famously cutting-edge, yet its ancient Buddhist temples, vintage teahouses, and peaceful gardens offer a 
+                serene escape—and a reminder of its past.Spend the morning in Asakusa, Tokyo’s historical neighbourhood, 
+                to see the Sensoji temple, then take a stroll along the Sumida River (in the spring, the cherry blossoms are in full force).
+                Or, make your way to Tsukiji Outer Market for a sushi breakfast—the narrow corridors are packed with tons of spots to choose from
+            </p>
+            <button class="wishlist" id="tokyo" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="tokyo.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_bali"class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/bali.avif" alt="bali" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">2. BALI, INDONESIA</span></h2>
+            <p style="font-size: 20px;">Bali packs a lot into one small island— from breathtaking waterfalls like Sekumpul in the north to the white sand beaches 
+                of Nyang Nyang in the south. Whatever you’re seeking, you’ll probably find: surf-able waves in Batu Bolong, all-night clubs in Seminyak,
+                luxury clifftop hotels in Nusa Dua, and spiritual refuges all around. Snap a pic at the Gateway to Heaven, cut through the jungle 
+                to the hidden Gunung Kawi Temple, and catch the sunset and a traditional fire dance at Uluwatu Temple. Just don’t miss the markets—hunt for 
+                handcrafted artwork and textiles at the Sukawati Art Market, or snack on street food staples like satay and bakso at the Sindhu Night Market.
+            </p>
+            <button class="wishlist" id="bali" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="bali.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>    
+    <div id="_london" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/london2.avif" alt="london" style="height: 420px;width: 400px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">3. LONDON, ENGLAND</span></h2>
+            <p style="font-size: 20px;">London’s a sprawling city at the centre of everything: art, history, culture—you name it. But what 
+                sets it apart from other major hubs are its distinct neighbourhoods, each with their own vibe. Spend an afternoon with the 
+                fam in Kensington: It’s got museums, parks, and plenty of other kid-approved things to do. Or check out edgy Shoreditch for 
+                cool shops and street murals (perfect for photo ops), then head to Soho where you can grab a pint at a pub or hit a club and party ‘til dawn.
+            </p>
+            <button class="wishlist" id="london" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="london.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_greece" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/greece2.avif" alt="greece" style="height: 420px;width: 400px; margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">4. GREECE</span></h2>
+            <p style="font-size: 20px;">Greece is the stuff of holiday dreams—with more than 200 islands to find whatever you’re looking for. 
+                Want ancient history, art, and culture? Start in the hub of Athens, where you’ll find treasures from the Acropolis to the Parthenon. 
+                Brush up on your Greek mythology in Olympia, where you can pay homage to Zeus and walk through the ruins of the first-ever Olympic games
+            </p>
+            <button class="wishlist" id="greece"style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="greece.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_dubai" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/dubai.avif" alt="dubai" style="height: 420px;width: 400px; margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">5. DUBAI, UAE</span></h2>
+            <p style="font-size: 20px;">Everything feels extra spectacular in Dubai—from the ultra-modern Burj Khalifa to the souks and malls filled with gold and jewellery vendors. 
+                It’s a place where if you can dream it, you can do it: Whether that means skiing indoors, dune-surfing in the desert, or zip-lining above the city. But it’s not all 
+                glitz and adrenaline-pumping action. Stroll through the winding alleys of Al Fahidi Historical Neighbourhood to see what Dubai was like during the mid-19th century. 
+                Or visit the Jumeirah Mosque (one of the few mosques open to non-Muslims) and learn about Emirati culture. Spot some street art on Jumeirah Beach Road and grab a bite 
+                at a shawarma shop, or spend the day hunting for spices and perfume then round things out with a Michelin-starred meal. 
+            </p>
+            <button class="wishlist" id="dubai" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="dubai.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_manali" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/manali.avif" alt="manali" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">1. MANALI</span></h2>
+            <p style="font-size: 20px;">In Hinduism, Manu was said to have survived a great flood that destroyed the rest of the world. He then recreated mankind in this Kullu Valley town. 
+                No wonder the towering peaks and verdant terrain of Manali attracts adventure travellers, with heli-skiing, hiking, mountaineering and river rafting the 
+                favored active pursuits. Come down from your endorphin high by breathing deeply at the four-story, wooden Hidimba Devi Temple, which sits in the middle of a nearby deciduous 
+                forest, or take a medicinal soak in the hot springs burbling from the ground a 30-minute walk from town.
+            </p>
+            <button class="wishlist" id="manali" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="manali.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_goa" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/goa.avif" alt="goa" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">2. GOA</span></h2>
+            <p style="font-size: 20px;">East meets West in this sun-soaked state, where Indian culture intertwines with Portuguese influences left over 
+                from a 500-year occupation. The beaches have long served as a magnet for serene hedonists. To the north, the tourist-centric scene is 
+                prevalent, with an international flair that is now skewing more hip than hippie. Travel south for stretches of unspoiled sand and an escape 
+                from large resorts. Temples, mosques and wildlife sanctuaries provide diversions from the beach.
+            </p>
+            <button class="wishlist" id="goa" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="goa.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>    
+    <div id="_darjeeling" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/darjeeling.avif" alt="darjeeling" style="height: 420px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">3. DARJEELING</span></h2>
+            <p style="font-size: 20px;">Darjeeling, nestled among rolling mountains, is a perfect destination for outdoor enthusiasts. Popular 
+                places to visit include Tiger Hill, Batasia Loop and the War Memorial, and the Himalayan Zoological Park and Snow Leopard Breeding Center. 
+                What should you bring home? Tea, tea, and more tea—and beautiful local handicrafts.
+            </p>
+            <button class="wishlist" id="darjeeling" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="darjeeling.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_newyork" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/NEWYORK.avif" alt="newyork" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">1. NEW YORK, USA</span></h2>
+            <p style="font-size: 20px;">The tallest skyscrapers, the biggest museums, the cheesiest pizza. New York City takes everything to the max. It’s easy to see why 
+                it’s the most-visited place in the U.S.: Whether you want to check out historic landmarks, catch a Broadway show, or stroll the streets of Brooklyn, there’s 
+                no wrong way to do it—and something new to discover every time you go. Spend the day neighbourhood-hopping, from the family-friendly Upper West Side packed 
+                with playgrounds and cute restaurants to the gritty-but-cool Lower East Side, each has its own vibe. Browse art galleries in Chelsea, go shopping in SoHo, 
+                then grab a drink in the East Village.
+            </p>
+            <button class="wishlist" id="newyork" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="newyork.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    
+    <div id="_amsterdam" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/amsterdam.avif" alt="amsterdam" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">3. AMSTERDAM, NETHERLANDS</span></h2>
+            <p style="font-size: 20px;">From its picturesque canals and bridges to its historic homes, Amsterdam could be considered straight out of a fairytale 
+                (and the brightly-coloured bicycles and tulip stands around town don’t hurt either). Must-see sights include the Anne Frank House, the Van Gogh 
+                Museum, and the world's only floating flower market.
+            </p>
+            <button class="wishlist" id="amsterdam" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="amsterdam.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_paris" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/paris.avif" alt="paris" style="height: 400px;width: 420px; margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">4. PARIS, FRANCE</span></h2>
+            <p style="font-size: 20px;">Paris lives up to its hype: A city with unbelievable food and culture, plus stunning views everywhere you turn. 
+                With 18 arrondissements, it’s a lot to see in one trip, but each neighbourhood has a personality all its own. You can’t miss the iconic 7th, 
+                where art and history meet—there’s the Eiffel Tower, sure, but the impressive Musée du quai Branly is just a short walk away. It houses an amazing 
+                collection of indigenous art. Or, hit up Montmartre (the 18th), with its boho shops and cosy brasseries. 
+            </p>
+            <button class="wishlist" id="paris" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="paris.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_rome" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/rome.avif" alt="rome" style="height: 400px;width: 420px; margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">5. ROME, ITALY</span></h2>
+            <p style="font-size: 20px;">It’s easy to see why Rome’s one of the most-visited places on the planet: There’s history everywhere (the Pantheon, the Colosseum, the list goes on), 
+                sculptural masterpieces in almost every piazza, and—of course—ridiculously good food. Every trip could feel like a whirlwind, but slow down and you’ll discover lots of surprises. 
+                Spend a Sunday morning in Trastevere and hunt for vintage finds at Porta Portese flea market. Or hit San Lorenzo—a student neighbourhood with an edgy-but-charming vibe—for trendy 
+                shops, galleries, and street art. 
+            </p>
+            <button class="wishlist" id="rome" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="rome.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_mumbai" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/mumbai.avif" alt="mumbai" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">1. MUMBAI</span></h2>
+            <p style="font-size: 20px;">Mumbai (formerly known as Bombay), India, is famous for its chaotic streets. For bargains and people-watching, outdoor bazaars 
+                top the list of attractions. Popular waterfront destinations are Marine Drive, where visitors go to watch the sun set over the Arabian Sea, and the carnival-like 
+                Juhu Beach. More sightseeing options are the Gandhi Museum, in the leader's former home, and the cave temples of Elephanta Island. For tranquillity, 
+                Mumbai has many religious sites, lakes and parks.
+            </p>
+            <button class="wishlist" id="mumbai"style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="mumbai.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_delhi" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/delhi.avif" alt="delhi" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">2. DELHI</span></h2>
+            <p style="font-size: 20px;">As the three world heritage monuments - Qutub Minar, Red Fort and Humayun's Tomb that have survived many centuries, 
+                and are stellar examples of the architectural prowess commanded by emperors in the past, numerous other hidden gems in Delhi, retain a sense 
+                of awe for all those who visit.
+            </p>
+            <button class="wishlist" id="delhi" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="delhi.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>    
+    <div id="_jaipur" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/jaipur.avif" alt="jaipur" style="height: 420px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">3. JAIPUR</span></h2>
+            <p style="font-size: 20px;">If you take one look at the glorious stucco buildings that line Jaipur's wide streets, you'll understand why this is nicknamed "The Pink City." 
+                Spend your days exploring City Palace, Hawa Mahal, and Amber and Jaigarh forts. And if you're looking for a unique souvenir, head to one of the bazaars,
+                where you can pick up a pair of camel-leather slippers.
+            </p>
+            <button class="wishlist" id="jaipur" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="jaipur.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_rishikesh" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/rishikesh.avif" alt="rishikesh" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">1. RISHIKESH, INDIA</span></h2>=
+            <p style="font-size: 20px;">The holy city of Rishikesh, in the base of the Himalayas, holds deep cultural and spiritual significance for local Hindus. 
+                Sacred rivers and mountains set the scene for yoga and reflective hikes, and rafting here is an absolute must. The Beatles got in touch with their 
+                Eastern spiritual side here, writing several songs during a 1968 stint at a local ashram.
+            </p>
+            <button class="wishlist" id="rishikesh" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="rishikesh.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    
+    <div id="_kedarnath" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/kedarnath.avif" alt="Kedarnath" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">2. KEDARNATH, INDIA</span></h2>
+            <p style="font-size: 20px;">Kedarnath is a sacred town nestled in the Garhwal Himalayas of Uttarakhand, India, renowned for its breathtaking natural beauty and spiritual significance. 
+                At an elevation of 3,583 meters, it is home to the revered Kedarnath Temple, one of the twelve Jyotirlingas of Lord Shiva and a key site in the Chota Char Dham pilgrimage. 
+                Surrounded by snow-capped peaks and serene landscapes, Kedarnath offers a profound spiritual experience and awe-inspiring vistas.
+            </p>
+            <button class="wishlist" id="kedarnath" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="kedarnath.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_badrinath" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/badrinath.avif" alt="badrinath" style="height: 400px;width: 420px; margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">3. BADRINATH</span></h2>
+            <p style="font-size: 20px;">Badrinath is a picturesque and spiritually significant town in the Chamoli district of Uttarakhand, India. 
+                Nestled in the Garhwal Himalayas at an altitude of 3,300 meters, it is one of the four Char Dham pilgrimage sites and an essential stop on the Panch Badri circuit. 
+                Dedicated to Lord Vishnu, the iconic Badrinath Temple stands as a beacon of faith and devotion amidst breathtaking mountain scenery. 
+            </p>
+            <button class="wishlist" id="badrinath" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="badrinath.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_shillong" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/shillong.avif" alt="shillong" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">1.SHILLONG , INDIA</span></h2>
+            <p style="font-size: 20px;">Shillong, the capital of Meghalaya, is a charming hill station often referred to as the "Scotland of the East" for its rolling hills, 
+                lush greenery, and serene lakes. Nestled at an altitude of 1,525 meters, Shillong boasts a pleasant climate, vibrant culture, and breathtaking landscapes. 
+                It is a perfect destination for nature enthusiasts, adventure seekers, and those seeking a relaxing getaway.
+            </p>
+            <button class="wishlist" id="shillong" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="shillong.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_shimla" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/shimla.avif" alt="shimla" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">2. SHIMLA, INDIA</span></h2>
+            <p style="font-size: 20px;">
+                Shimla, the charming capital of Himachal Pradesh, is a hill station renowned for its colonial heritage, stunning landscapes, and pleasant climate. 
+                Nestled in the lap of the Himalayas at an altitude of 2,276 meters, Shimla boasts lush green valleys, snow-capped peaks, and a vibrant cultural scene, 
+                making it a favorite destination for honeymooners, families, and adventure enthusiasts
+            </p>
+            <button class="wishlist" id="shimla" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="shimla.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>    
+    <div id="_levi" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/leviFin.avif" alt="levi" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">3. LEVI, FINLAND</span></h2>
+            <p style="font-size: 20px;">A round-the-year outdoor resort, Levi is one of Finland’s largest ski centers, with 48 slopes mostly for beginners and intermediates, 
+                but also including four very difficult black slopes. There’s a full range of other winter activities as well, including snowmobiling, cross country skiing, and dog sledding.
+            </p>
+            <button class="wishlist" id="levi" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="levi.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_kathmandu" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/kathmandu.avif" alt="kathmandu" style="height: 400px;width: 420px; margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">4. KATHMANDU</span></h2>
+            <p style="font-size: 20px;">Kathmandu, the capital city of Nepal, is a vibrant blend of ancient heritage and modern charm. Nestled in a scenic valley surrounded by the Himalayas, 
+                it serves as a gateway to Nepal’s rich culture, history, and spirituality. With centuries-old temples, bustling markets, and stunning architecture, Kathmandu offers an unforgettable experience for every traveler.
+            </p>
+            <button class="wishlist" id="kathmandu" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="kathmandu.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_maldives" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/maldives.avif" alt="maldives" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">1.MALDIVES</span></h2>
+            <p style="font-size: 20px;">With 26 atolls and 1,000+ islands spread out across the idyllic waters of the Indian Ocean, the Maldives are an island-hopper’s dream. Below the water, 
+                there’s miles of coral reef that are home to thousands of species of marine life and underwater treasures. To get the best of it: Go diving at Broken Rock, snorkel with manta rays in Hanifaru Bay, 
+                or charter a boat to hit all the top spots. Then there’s the world above, which is known for its beautiful beaches and luxury villas, but has a rich culture and history to uncover as well..
+            </p>
+            <button class="wishlist" id="maldives" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="maldives.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+    <div id="_lakshwadeep" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/lakshadweep.avif" alt="lakshwadeep" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">2. LAKSHWADEEP</span></h2>
+            <p style="font-size: 20px;">The name of India's tiniest Union Territory means "100,000 islands" in Maylayam, the local language; but in truth, there are 36 isles in this archipelago, 
+                10 that are inhabited. In these palm-laden coral islands, a northern extension of the Maldives, diving reigns supreme. Both Kavaratti and Kadmat have full-service scuba facilities, 
+                and the latter also has a center for kayaking, water skiing, yachting and wind surfing. Teardrop-shaped Bangaram woos couples with its uninhabited white sands.
+            </p>
+            <button class="wishlist" id="lakshwadeep" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="lakshwadeep.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>    
+    <div id="_andaman" class="dest-wrapper" style="width: 100%;height:auto; background-color: rgb(158, 221, 180);display: none;">
+        <div class="left-hand-img">
+            <img src="images/destinations/andaman nd nicobar.avif" alt="andaman" style="height: 400px;width: 420px;margin-bottom: 1rem;border-radius: 1rem;">
+        </div>
+        <div class="right-hand-info">
+            <h2><span style="color: darkslategrey;">3. ANDAMAN AND NICOBAR ISLANDS</span></h2>
+            <p style="font-size: 20px;">Sparsely-populated beaches that give way to an ocean brimming with interesting marine life and coral gardens are just one of the reasons to visit the beautiful 
+                Andaman and Nicobar Islands. Ghandi Park, Sippighat Farm and the century-old Cellular Jail (now a pilgrimage destination) provide glimpses into the past and present of these peaceful 
+                islands with a mysterious and multicultural past.
+            </p>
+            <button class="wishlist" id="andaman" style="font-size: 18px; width: 200px; text-align: center; border-radius: 2rem; height: 30px;border: none;margin-top: 1rem;margin-left: 1.5rem;"><i class="fa-solid fa-trash" style="font-size: 20px; padding-left: 0;"></i> Delete from wishlist</button>
+            <a href="andaman.html" style="font-size: 25px; color: #36464a; margin-left: 2rem;">View More</a>
+        </div>
+    </div>
+   
+
+
+</body>
+</html>
